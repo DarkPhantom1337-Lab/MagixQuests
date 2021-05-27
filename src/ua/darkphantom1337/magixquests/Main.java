@@ -27,7 +27,7 @@ public class Main extends JavaPlugin {
 			main = Main.this;
 			cfg = new ConfigFile(this, "config.yml");
 			updateQuests();
-			getCommand("quest").setExecutor(new MagixLevelsCMD(this));
+			getCommand("quest").setExecutor(new QuestsCMD(this));
 			Bukkit.getPluginManager().registerEvents(new Listeners(this), this);
 			Bukkit.getConsoleSender()
 					.sendMessage("§c[§eMagixQuests§c] §f-> §aPlugin succesfully enabled! // by Darkphantom1337, 2021");

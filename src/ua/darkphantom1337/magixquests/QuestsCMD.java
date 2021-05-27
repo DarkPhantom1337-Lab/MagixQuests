@@ -5,11 +5,11 @@ import org.bukkit.command.CommandExecutor;
 import org.bukkit.command.CommandSender;
 import org.bukkit.entity.Player;
 
-public class MagixLevelsCMD implements CommandExecutor {
+public class QuestsCMD implements CommandExecutor {
 
 	private Main plugin;
 
-	public MagixLevelsCMD(Main plugin) {
+	public QuestsCMD(Main plugin) {
 		this.plugin = plugin;
 	}
 
