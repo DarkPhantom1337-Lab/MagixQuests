@@ -15,6 +15,7 @@ import org.bukkit.Location;
 import org.bukkit.Material;
 import org.bukkit.configuration.file.FileConfiguration;
 import org.bukkit.configuration.file.YamlConfiguration;
+import org.bukkit.inventory.ItemFlag;
 import org.bukkit.inventory.ItemStack;
 import org.bukkit.inventory.meta.ItemMeta;
 
@@ -120,6 +121,7 @@ public class QuestFile {
 		meta.setLore(getCfgFile().getStringList(path + ".Lore"));
 		if (getCfgFile().isSet(path + ".Data"))
 			item.setDurability((short) getCfgFile().getInt(path + ".Data"));
+		meta.addItemFlags(ItemFlag.HIDE_ATTRIBUTES);
 		item.setItemMeta(meta);
 		return item;
 	}
